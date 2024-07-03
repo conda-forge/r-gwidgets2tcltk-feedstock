@@ -1,6 +1,5 @@
 {% set version = "1.0-8" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-gwidgets2tcltk
@@ -13,8 +12,7 @@ source:
   sha256: 10399cc636eeeb5484c3379970c37c56df10d979bf866a35b66d0c75b7222c0a
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
