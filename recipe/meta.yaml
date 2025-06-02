@@ -1,4 +1,4 @@
-{% set version = "1.0-8" %}
+{% set version = "1.0-9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gWidgets2tcltk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gWidgets2tcltk/gWidgets2tcltk_{{ version }}.tar.gz
-  sha256: 10399cc636eeeb5484c3379970c37c56df10d979bf866a35b66d0c75b7222c0a
+  sha256: 5939ab6b0b40fa7dd55f190f8706f5b0d1d68bda411e4f90cd78004e470056ca
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
